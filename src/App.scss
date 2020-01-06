@@ -1,0 +1,45 @@
+body {
+    background-color: #303030;
+    color: white;
+  }
+  #app {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    #header {
+      width: 100%;
+      padding: 1em 0.5em 0 0.5em;
+      background-color: goldenrod;
+      color: #353535;
+      font-size: 1.5rem;
+      font-weight: 900;
+      h1 {
+        margin: 0;
+        line-height: 2.2rem;
+      }
+    }
+    #editor, #preview {
+      flex-basis: 50%;
+      padding: 1em;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  #editor, #preview {
+    textarea {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+  }
+
+  .component-title {
+      border-bottom: 3px solid goldenrod;
+  }
